@@ -1,13 +1,18 @@
-# Activer le module de réécriture
+# Activer la réécriture d'URL
 RewriteEngine On
 
-# Réécriture des URLs sans extension
+# Vérifier que la requête n'est pas déjà un fichier ou un répertoire
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)$ $1.html [L,QSA]
 
-# Rediriger automatiquement la page d'accueil vers index.html si aucune route spécifique
+# Réécriture de l'URL sans extension
+RewriteRule ^(.*)/$ $1.html [L,QSA]
+
+# Rediriger les anciennes URL avec .html vers la version sans l'extension
+RewriteRule ^([^/]+)\.html$ /$1 [R=301,L]
+
+# Rediriger la page d'accueil vers index.html
 DirectoryIndex index.html
 
-# Gestion des erreurs
+# Gestion des erreurs (page 404)
 ErrorDocument 404 /404.html
