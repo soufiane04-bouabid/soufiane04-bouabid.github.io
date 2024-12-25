@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Compétences</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container2 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.form-container2, .skills-container2 {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.skill-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-details {
+    max-width: 70%;
+}
+
+.skill-actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #f39c12;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #d35400;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion des Compétences</h1>
+
+        <!-- Form to Add Competence -->
+        <div class="form-container">
+            <h2>Ajouter une Compétence</h2>
+            <form id="add-skill-form">
+                <input type="text" id="nom" placeholder="Nom de la compétence" required>
+                <textarea id="description" placeholder="Description de la compétence (facultative)"></textarea>
+                <select id="niveau">
+                    <option value="Débutant">Débutant</option>
+                    <option value="Intermédiaire">Intermédiaire</option>
+                    <option value="Avancé">Avancé</option>
+                </select>
+                <button type="submit">Ajouter</button>
+            </form>
+        </div>
+
+        <!-- Div to Display Competences -->
+        <div class="skills-container">
+            <h2>Liste des Compétences</h2>
+            <div id="skills-list">
+                <!-- Skills will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <script src="scripte1.js"></script>
+</body>
+</html>
