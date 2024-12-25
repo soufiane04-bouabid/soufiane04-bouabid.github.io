@@ -1,1 +1,13 @@
-ErrorDocument 404 https://tp1test.freesite.online/404.html
+# Activer le module de réécriture
+RewriteEngine On
+
+# Réécriture des URLs sans extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ $1.html [L,QSA]
+
+# Rediriger automatiquement la page d'accueil vers index.html si aucune route spécifique
+DirectoryIndex index.html
+
+# Gestion des erreurs
+ErrorDocument 404 /404.html
