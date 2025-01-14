@@ -9,7 +9,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ $1.html [L,QSA]
 
 # Rediriger les anciennes URL avec .html vers la version sans l'extension
-RewriteRule ^([^/]+)\.html$ /$1 [R=301,L]
+# Redirection des URL avec .html vers leur version sans .html
+RewriteCond %{THE_REQUEST} \s/([^\s]+)\.html
+RewriteRule ^ /%1 [R=301,L]
 
 # Rediriger la page d'accueil vers index.html
 DirectoryIndex index.html
