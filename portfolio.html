@@ -8,78 +8,69 @@
     <link rel="stylesheet" href="style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <!-- Métadonnées OpenGraph -->
-
-   
-
-<meta property="og:url" content="https://soufiane04-bouabid.github.io/index" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Bienvenue sur My my portfolio" />
-<meta property="og:description" content="Visitez mon portfolio pour découvrir mes projets, compétences et bien plus encore. Explorez mon univers créatif !"/>
-<meta property="og:image" content="https://res.cloudinary.com/dfya7tyjw/image/upload/v1738055086/WhatsApp_Image_2025-01-28_at_10.03.54_hqpv9c.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-
+    <!-- Métadonnées OpenGraph -->
+    <meta property="og:url" content="https://soufiane04-bouabid.github.io/index" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bienvenue sur My my portfolio" />
+    <meta property="og:description" content="Visitez mon portfolio pour découvrir mes projets, compétences et bien plus encore. Explorez mon univers créatif !"/>
+    <meta property="og:image" content="https://res.cloudinary.com/dfya7tyjw/image/upload/v1738055086/WhatsApp_Image_2025-01-28_at_10.03.54_hqpv9c.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <!-- Optionnel : Pour Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bienvenue sur My my portfolio">
     <meta name="twitter:description" content="Découvrez des articles passionnants, des conseils utiles et bien plus encore sur Mon Site Web.">
     <meta name="twitter:image" content="https://www.monsiteweb.com/images/preview-image.jpg">
-
 </head>
 <body>
-    <header id="home" class="hero-section">
-        <nav class="navbar">
+    <header id="home" class="hero-section" role="banner">
+        <nav class="navbar" aria-label="Main Navigation">
             <div class="logo">
                 <img src="3.gif" alt="Logo" class="logo-image">
             </div>
             <ul class="nav-links">
-                <li><a href="index">Accueil</a></li>
-                <li><a href="cv">Curriculum vitæ</a></li>
-                <li><a href="portfolio">Portfolio</a></li>
-                <li><a href="competence">compétence</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="index" aria-label="Accueil">Accueil</a></li>
+                <li><a href="cv" aria-label="Curriculum vitæ">Curriculum vitæ</a></li>
+                <li><a href="portfolio" aria-label="Portfolio">Portfolio</a></li>
+                <li><a href="competence" aria-label="Compétence">Compétence</a></li>
+                <li><a href="contact" aria-label="Contact">Contact</a></li>
             </ul>
         </nav>
-        
     </header>
-     <!-- Portfolio -->
-     <section id="portfolio" class="portfolio-section">
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section" aria-labelledby="portfolio-title">
         <div class="titlepage">
-            <h1>Portfolio</h1>
+            <h1 id="portfolio-title">Portfolio</h1>
         </div>
-        <div class="portfolio-carousel">
-            <button class="nav-arrow left-arrow">❮</button>
-            <div class="portfolio-item">
-                <div id="carousel-media"></div> <!-- Media container for image or video -->
-                <h3 id="carousel-title">Project 1</h3>
-                <p id="carousel-description">React & Node.js Application</p>
+        <div class="portfolio-carousel" aria-live="polite">
+            <button class="nav-arrow left-arrow" aria-label="Previous Project">❮</button>
+            <div class="portfolio-item" aria-live="polite">
+                <div id="carousel-media" role="img" aria-label="Media container for image or video"></div> <!-- Media container for image or video -->
+                <h3 id="carousel-title" aria-labelledby="carousel-title">Project 1</h3>
+                <p id="carousel-description" aria-describedby="carousel-description">React & Node.js Application</p>
             </div>
-            <button class="nav-arrow right-arrow">❯</button>
+            <button class="nav-arrow right-arrow" aria-label="Next Project">❯</button>
         </div>
     </section>
-    
 
-
-    <!-- FOOTER -->
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
         <div class="footer-container">
             <p>© 2024 Soufiane Bouabid. Tous droits réservés.</p>
-            <div class="social-icons1">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <div class="social-icons1" role="navigation" aria-label="Social Media Links">
+                <a href="#" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" aria-label="GitHub Profile"><i class='bx bxl-github' ></i></a>
+                <a href="#" aria-label="Twitter Profile"><i class='bx bxl-twitter' ></i></a>
+                <a href="#" aria-label="Instagram Profile"><i class='bx bxl-instagram' ></i></a>
             </div>
-            <a href="mentionslegales.html" rel="nofollow">Mentions légales</a>
+            <a href="mentionslegales.html" rel="nofollow" aria-label="Mentions légales">Mentions légales</a>
         </div>
     </footer>
     <script src="script1.js"></script>
     <script src="scripte1.js"></script>
     <script type="text/javascript">
-  window.location.replace("/portfolio");
-</script>
-
-
+        window.location.replace("/portfolio");
+    </script>
 </body>
 </html>
