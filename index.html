@@ -9,110 +9,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
-        <!-- Métadonnées OpenGraph -->
-
-    
-
-<meta property="og:url" content="https://soufiane04-bouabid.github.io/index" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Bienvenue sur My my portfolio" />
-<meta property="og:description" content="Visitez mon portfolio pour découvrir mes projets, compétences et bien plus encore. Explorez mon univers créatif !"/>
-<meta property="og:image" content="https://res.cloudinary.com/dfya7tyjw/image/upload/v1738055086/WhatsApp_Image_2025-01-28_at_10.03.54_hqpv9c.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+    <!-- Métadonnées OpenGraph -->
+    <meta property="og:url" content="https://soufiane04-bouabid.github.io/index" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bienvenue sur My my portfolio" />
+    <meta property="og:description" content="Visitez mon portfolio pour découvrir mes projets, compétences et bien plus encore. Explorez mon univers créatif !"/>
+    <meta property="og:image" content="https://res.cloudinary.com/dfya7tyjw/image/upload/v1738055086/WhatsApp_Image_2025-01-28_at_10.03.54_hqpv9c.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Optionnel : Pour Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bienvenue sur My my portfolio">
     <meta name="twitter:description" content="Découvrez des articles passionnants, des conseils utiles et bien plus encore sur Mon Site Web.">
     <meta name="twitter:image" content="https://www.monsiteweb.com/images/preview-image.jpg">
-
-
 </head>
 <body>
     <!-- PAGE D'ACCUEIL -->
-    <header id="home" class="hero-section">
-        <nav class="navbar">
+    <header id="home" class="hero-section" role="banner">
+        <nav class="navbar" role="navigation">
             <div class="logo">
-                <img src="3.gif" alt="Logo" class="logo-image"> 
+                <img src="3.gif" alt="Logo" class="logo-image" role="img" aria-label="Soufiane's Logo"> 
             </div>
-            <ul class="nav-links">
-                <li><a href="index">Accueil</a></li>
-                <li><a href="cv">Curriculum vitæ</a></li>
-                <li><a href="portfolio">Portfolio</a></li>
-                <li><a href="competence">compétence</a></li>
-                <li><a href="contact">Contact</a></li>
+            <ul class="nav-links" role="menubar">
+                <li><a href="index" role="menuitem" aria-label="Go to home page">Accueil</a></li>
+                <li><a href="cv" role="menuitem" aria-label="View my CV">Curriculum vitæ</a></li>
+                <li><a href="portfolio" role="menuitem" aria-label="View my portfolio">Portfolio</a></li>
+                <li><a href="competence" role="menuitem" aria-label="See my skills">Compétence</a></li>
+                <li><a href="contact" role="menuitem" aria-label="Contact me">Contact</a></li>
             </ul>
         </nav>
-        
     </header>
-    <!-- TEST -->
     
-        <!-- Content -->
+    <!-- Content -->
     <main>
-     <section class="home1" id="home1">
-        <div aria-level="1" class="titlepage"> <h1  >Accueil</h1></div>
-       
-        <div class="home1-content">
-            <h2>Salut c'est <span>Soufiane</span></h2>
-            <h3 class="text-animation">Je suis un  <span> </span></h3>
-            <div class="text-image-wrapper">
-                <p> Étudiant en Licence Professionnelle
-                    Métiers du Numérique, je possède une
-                    expertise en conception de sites web,
-                    intégration numérique et design UX/UI.
-                    Je recherche un stage de 12 à 16
-                    semaines à partir du 17 mars 2025, afin
-                    d'appliquer mes compétences en HTML,
-                    CSS, PHP, SEO et outils de design
-                    interactif (Figma, Adobe Illustrator,
-                    Photoshop). Dynamique et mobile, je
-                    suis motivé à collaborer sur des projets
-                    innovants au sein d'une équipe
-                    performante, avec une approche
-                    orientée vers les résultats.
-                    </p>
-                <div class="home1-img">
-                    <img src="img1.jpg" alt="Profile Picture">
+        <section class="home1" id="home1" aria-labelledby="home1-title">
+            <div class="titlepage" id="home1-title">
+                <h1>Accueil</h1>
+            </div>
+
+            <div class="home1-content">
+                <h2>Salut c'est <span>Soufiane</span></h2>
+                <h3 class="text-animation">Je suis un <span></span></h3>
+                <div class="text-image-wrapper">
+                    <p>Étudiant en Licence Professionnelle Métiers du Numérique, je possède une expertise en conception de sites web, intégration numérique et design UX/UI. Je recherche un stage de 12 à 16 semaines à partir du 17 mars 2025, afin d'appliquer mes compétences en HTML, CSS, PHP, SEO et outils de design interactif (Figma, Adobe Illustrator, Photoshop). Dynamique et mobile, je suis motivé à collaborer sur des projets innovants au sein d'une équipe performante, avec une approche orientée vers les résultats.</p>
+                    <div class="home1-img">
+                        <img src="img1.jpg" alt="Profile Picture of Soufiane" role="img" aria-describedby="profile-description">
+                    </div>
+                </div>
+
+                <div class="social-icons" role="contentinfo" aria-label="Social media links">
+                    <a href="#" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" aria-label="GitHub Profile"><i class='bx bxl-github'></i></a>
+                    <a href="#" aria-label="Twitter Profile"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" aria-label="Instagram Profile"><i class='bx bxl-instagram'></i></a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="contact" class="btn" aria-label="Go to contact page">Contact</a>
                 </div>
             </div>
-            
+        </section>
+    </main>
 
-            <div class="social-icons">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-            </div>
-            <div class="btn-group">
-                
-                <a href="contact" class="btn">contact</a>
-            </div>
-        </div>
-
-        
-     </section>
-   
-
-</main>
-
-
-    
-
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-container">
             <p>© 2024 Soufiane Bouabid. Tous droits réservés.</p>
-            <div class="social-icons1">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <div class="social-icons1" role="contentinfo" aria-label="Social media links">
+                <a href="#" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" aria-label="GitHub Profile"><i class='bx bxl-github'></i></a>
+                <a href="#" aria-label="Twitter Profile"><i class='bx bxl-twitter'></i></a>
+                <a href="#" aria-label="Instagram Profile"><i class='bx bxl-instagram'></i></a>
             </div>
-            <a href="mentionslegales.html" rel="nofollow">Mentions légales</a>
+            <a href="mentionslegales.html" rel="nofollow" aria-label="View legal notices">Mentions légales</a>
         </div>
     </footer>
-    <script src="script1.js"></script>
 
-  
+    <script src="script1.js"></script>
 </body>
 </html>
