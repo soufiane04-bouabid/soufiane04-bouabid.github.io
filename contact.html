@@ -2,107 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <!-- Métadonnées OpenGraph -->
-
-    
-
-<meta property="og:url" content="https://soufiane04-bouabid.github.io/index" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Bienvenue sur My my portfolio" />
-<meta property="og:description" content="Visitez mon portfolio pour découvrir mes projets, compétences et bien plus encore. Explorez mon univers créatif !"/>
-<meta property="og:image" content="https://res.cloudinary.com/dfya7tyjw/image/upload/v1738055086/WhatsApp_Image_2025-01-28_at_10.03.54_hqpv9c.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-
+    <!-- Métadonnées OpenGraph -->
+    <meta property="og:url" content="https://soufiane04-bouabid.github.io/index" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bienvenue sur My my portfolio" />
+    <meta property="og:description" content="Visitez mon portfolio pour découvrir mes projets, compétences et bien plus encore. Explorez mon univers créatif !"/>
+    <meta property="og:image" content="https://res.cloudinary.com/dfya7tyjw/image/upload/v1738055086/WhatsApp_Image_2025-01-28_at_10.03.54_hqpv9c.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <!-- Optionnel : Pour Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bienvenue sur My my portfolio">
     <meta name="twitter:description" content="Découvrez des articles passionnants, des conseils utiles et bien plus encore sur Mon Site Web.">
     <meta name="twitter:image" content="https://www.monsiteweb.com/images/preview-image.jpg">
-
-    
 </head>
 <body>
-    <header id="home" class="hero-section">
-        <nav class="navbar">
+    <header id="home" class="hero-section" role="banner">
+        <nav class="navbar" aria-label="Main Navigation">
             <div class="logo">
                 <img src="3.gif" alt="Logo" class="logo-image">
             </div>
             <ul class="nav-links">
-                <li><a href="index">Accueil</a></li>
-                <li><a href="cv">Curriculum vitæ</a></li>
-                <li><a href="portfolio">Portfolio</a></li>
-                <li><a href="competence">compétence</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="index" aria-label="Accueil">Accueil</a></li>
+                <li><a href="cv" aria-label="Curriculum vitæ">Curriculum vitæ</a></li>
+                <li><a href="portfolio" aria-label="Portfolio">Portfolio</a></li>
+                <li><a href="competence" aria-label="Compétence">Compétence</a></li>
+                <li><a href="contact" aria-label="Contact">Contact</a></li>
             </ul>
         </nav>
-        
     </header>
+
     <!-- Contact Form -->
-    
-    
-    
-    <div class="titlepage"> <h1  >Contact</h1></div>
+    <div class="titlepage" role="heading" aria-level="1">
+        <h1>Contact</h1>
+    </div>
+
     <section class="divcontact">
         <div class="TEST2">
             <div class="cv-card3">
                 <ul>
-                    <a href="#"><i class='bx bxl-gmail'></i><li>soufianebouabids@gmail.com</li></a>
-                    <a href="#"><i class='bx bx-phone'></i><li>+33 617834842</li></a>
-                    <a href="#"><i class='bx bx-home'></i><li>36 rue de la gravière, 08000 Charleville-Mézières</li></a>
+                    <li><a href="mailto:soufianebouabids@gmail.com" aria-label="Envoyer un e-mail à Soufiane Bouabid"><i class='bx bxl-gmail'></i> soufianebouabids@gmail.com</a></li>
+                    <li><a href="tel:+33617834842" aria-label="Appeler Soufiane Bouabid"><i class='bx bx-phone'></i> +33 617834842</a></li>
+                    <li><i class='bx bx-home'></i> 36 rue de la gravière, 08000 Charleville-Mézières</li>
                 </ul>
             </div>
         </div>
-    
+
         <div class="TEST1">
-            
-            <form class="form1">
+            <form class="form1" aria-labelledby="formTitle" role="form">
                 <div class="head">
                     <p>* Veuillez remplir tous les champs de texte.</p>
                 </div>
                 <label for="fullName">Votre nom :</label>
-                <input type="text" placeholder="Full Name" name="fullName" id="fullName">
-    
+                <input type="text" placeholder="Full Name" name="fullName" id="fullName" aria-required="true" aria-describedby="nameHelp">
+
                 <label for="email">Votre e-mail :</label>
-                <input type="email" placeholder="abcd@xyz.com" name="email" id="email" required>
-    
+                <input type="email" placeholder="abcd@xyz.com" name="email" id="email" required aria-required="true">
+
                 <label for="subject">Sujet :</label>
-                <input type="text" placeholder="Job Enquiry" name="subject" id="subject" required>
-              
+                <input type="text" placeholder="Job Enquiry" name="subject" id="subject" required aria-required="true">
+
                 <label for="message">Message:</label>
-                <textarea placeholder="Your Message Here" name="message" id="message" required></textarea>
-    
-                <a href="contact.html" class="btn1">Envoyer</a>
+                <textarea placeholder="Your Message Here" name="message" id="message" required aria-required="true"></textarea>
+
+                <a href="contact.html" class="btn1" aria-label="Envoyer le formulaire de contact">Envoyer</a>
             </form>
         </div>
     </section>
 
-
-
-
-
-
-
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-container">
             <p>© 2024 Soufiane Bouabid. Tous droits réservés.</p>
-            <div class="social-icons1">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <div class="social-icons1" role="navigation" aria-label="Social Media Links">
+                <a href="#" aria-label="Suivre Soufiane sur LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" aria-label="Voir le profil GitHub de Soufiane"><i class='bx bxl-github' ></i></a>
+                <a href="#" aria-label="Suivre Soufiane sur Twitter"><i class='bx bxl-twitter' ></i></a>
+                <a href="#" aria-label="Suivre Soufiane sur Instagram"><i class='bx bxl-instagram' ></i></a>
             </div>
-            <a href="mentionslegales.html" rel="nofollow">Mentions légales</a>
+            <a href="mentionslegales.html" rel="nofollow" aria-label="Mentions légales">Mentions légales</a>
         </div>
     </footer>
+
     <script src="script1.js"></script>
-
-
 </body>
 </html>
