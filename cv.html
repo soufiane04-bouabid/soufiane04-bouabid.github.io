@@ -1,62 +1,122 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mentions Légales</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style1.css">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <style>
-    /* Your styles */
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!-- Métadonnées OpenGraph -->
+    <meta property="og:url" content="https://soufiane04-bouabid.github.io/index" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bienvenue sur My my portfolio" />
+    <meta property="og:description" content="Visitez mon portfolio pour découvrir mes projets, compétences et bien plus encore. Explorez mon univers créatif !"/>
+    <meta property="og:image" content="https://res.cloudinary.com/dfya7tyjw/image/upload/v1738055086/WhatsApp_Image_2025-01-28_at_10.03.54_hqpv9c.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bienvenue sur My my portfolio">
+    <meta name="twitter:description" content="Découvrez des articles passionnants, des conseils utiles et bien plus encore sur Mon Site Web.">
+    <meta name="twitter:image" content="https://www.monsiteweb.com/images/preview-image.jpg">
 </head>
 <body>
-    <!-- Header with ARIA role -->
     <header id="home" class="hero-section" role="banner">
-        <nav class="navbar" role="navigation">
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
             <div class="logo">
-                <img src="3.gif" alt="Logo Soufiane Bouabid" class="logo-image"> 
+                <img src="3.gif" alt="Logo" class="logo-image">
             </div>
             <ul class="nav-links">
-                <li><a href="index.html" aria-label="Page d'accueil">Accueil</a></li>
-                <li><a href="cv.html" aria-label="Curriculum vitæ">Curriculum vitæ</a></li>
-                <li><a href="portfolio.html" aria-label="Mon Portfolio">Portfolio</a></li>
-                <li><a href="competence.html" aria-label="Mes compétences">compétence</a></li>
-                <li><a href="contact.html" aria-label="Page Contact">Contact</a></li>
+                <li><a href="index" aria-label="Accueil">Accueil</a></li>
+                <li><a href="cv" aria-label="Curriculum vitæ">Curriculum vitæ</a></li>
+                <li><a href="portfolio" aria-label="Portfolio">Portfolio</a></li>
+                <li><a href="competence" aria-label="Compétences">Compétence</a></li>
+                <li><a href="contact" aria-label="Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
+    <!-- CV -->
+    <section class="contact" aria-labelledby="cv-section-title">
+        <div class="titlepage" id="cv-section-title"><h1>Curriculum Vitæ</h1></div>
+       
+        <div class="cv-container">
+            <div class="cv-card1">
+                <div class="profile">
+                    <img src="img1.jpg" alt="Professional Photo" class="profile-photo">
+                </div>
+                <p class="title">Soufiane Bouabid</p>
+                <p class="title">Développeur Web & Web Designer</p>
+            </div>
+            
+            <div class="cv-card" aria-labelledby="contact-title">
+                <h2 id="contact-title">Contact</h2>
+                <ul>
+                    <li>Email: soufianebouabids@gmail.com</li>
+                    <li>Téléphone: 0617834842</li>
+                    <li>Adresse: 36 rue de la gravière, 08000 Charleville-Mézières</li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/soufiane-bouabid" target="_blank" aria-label="LinkedIn Profile">linkedin.com/in/soufiane-bouabid</a></li>
+                </ul>
+                <div aria-label="Fermer" aria-hidden="true" class="btn-group">
+                    <a href="contact.html" class="btn" aria-label="Go to Contact Page">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="container">
-    <div class="titlepage" role="heading" aria-level="1">
-      <h1>Mentions Légales</h1>
-    </div>
-    <div class="home1-content" role="main">
-      <h2>Édition du site</h2>
-      <p>Le présent site, accessible à l’URL <a href="https://soufiane04-bouabid.github.io/" target="_blank" aria-label="Visitez mon site">https://soufiane04-bouabid.github.io/</a> (le « Site »), est édité par :</p>
-      <p><strong>Soufiane Bouabid</strong>, résidant 2 rue de l'échappée, 75010 Paris, de nationalité Française, né(e) le 12/09/1997.</p>
+    <section id="cv" class="cv-section" aria-labelledby="cv-experience-title">
+        <div class="cv-container">
+            <div class="cv-card" aria-labelledby="cv-objective-title">
+                <h2 id="cv-objective-title">Objectif</h2>
+                <p>
+                    Appliquer mes compétences en HTML, CSS, PHP, SEO, et outils de design interactif (Figma, Adobe Illustrator, Photoshop) 
+                    sur des projets innovants au sein d'une équipe performante.
+                </p>
+            </div>
+            <div class="cv-card" aria-labelledby="cv-education-title">
+                <h2 id="cv-education-title">Éducation</h2>
+                <ul>
+                    <li><strong>Licence Professionnelle Métiers du Numérique</strong> - 2024 à présent <br> École d’Ingénieurs à Charleville-Mézières, France</li>
+                    <li><strong>Bachelor Européen en Informatique</strong> - 2019 à 2020 <br> École Française d’Enseignement Technique, Fès</li>
+                    <li><strong>Technicien Spécialisé</strong> - 2017 à 2019 <br> Institut Spécialisé de Technologie Appliquée, Fès</li>
+                    <li><strong>Baccalauréat</strong> - 2014 à 2015 <br> Lycée Bensouda, Fès</li>
+                </ul>
+            </div>
+            <div class="cv-card" aria-labelledby="cv-experience-title">
+                <h2 id="cv-experience-title">Expériences</h2>
+                <div class="job">
+                    <h3>Responsable E-commerce</h3>
+                    <p>E-Market Solutions, Fès (Jan 2023 - Juil 2024)</p>
+                    <ul>
+                        <li>Supervision des stratégies de marketing par email.</li>
+                        <li>Analyse des performances et proposition de solutions innovantes.</li>
+                        <li>Coordination des équipes pour des actions marketing efficaces.</li>
+                    </ul>
+                    <h3>Agent Mailer</h3>
+                    <p>E-Market Solutions, Fès (Jan 2020 - Déc 2022)</p>
+                    <ul>
+                        <li>Optimisation des campagnes d'email marketing.</li>
+                        <li>Amélioration des taux d'ouverture et d'engagement utilisateur.</li>
+                        <li>Collaboration avec l'équipe marketing pour personnaliser les messages.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <h2>Hébergement</h2>
-      <p>Le Site est hébergé par la société <strong>github.io</strong>, situé 2 rue de l'échappée, 75010 Paris. (Contact téléphonique ou email : <strong>+33617834842</strong>).</p>
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <p>© 2024 Soufiane Bouabid. Tous droits réservés.</p>
+            <div class="social-icons1" role="complementary">
+                <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="mentionslegales.html" rel="nofollow" aria-label="View Legal Mentions">Mentions légales</a>
+        </div>
+    </footer>
 
-      <h2>Directeur de publication</h2>
-      <p>Le Directeur de la publication du Site est <strong>Soufiane Bouabid</strong>.</p>
-
-      <h2>Nous contacter</h2>
-      <p>Par téléphone : <strong>+33617834848</strong></p>
-      <p>Par email : <strong><a href="mailto:ems.source04@gmail.com" aria-label="Envoyer un email à Soufiane Bouabid">ems.source04@gmail.com</a></strong></p>
-      <p>Par courrier : 2 rue de l'échappée, 75010 Paris</p>
-
-      <h2>Données personnelles</h2>
-      <p>Le traitement de vos données à caractère personnel est régi par notre Charte du respect de la vie privée, disponible depuis la section "Charte de Protection des Données Personnelles", conformément au Règlement Général sur la Protection des Données 2016/679 du 27 avril 2016 (« RGPD »).</p>
-      <p>Nous avons désigné un Délégué à la Protection des Données (DPO) auprès de la CNIL (Désignation N° ). Les coordonnées de notre Délégué à la Protection des Données sont les suivantes :</p>
-      <p><strong>Nom : Arthur Martin</strong><br>
-      <strong>Adresse : 2 rue de l'échappée, 75010 Paris</strong><br>
-      <strong>Téléphone : +33617834847</strong><br>
-      <strong>Email : <a href="mailto:em.source04@gmail.com" aria-label="Email de Arthur Martin">em.source04@gmail.com</a></strong></p>
-    </div>
-  </div>
+    <script src="script1.js"></script>
 </body>
 </html>
